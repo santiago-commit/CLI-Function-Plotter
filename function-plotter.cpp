@@ -44,7 +44,7 @@ void show(int M[41][41], int f, int c){
 void function(int y, int M[41][41], int f, int c){
 	for(int x = -(c/2); x <= (c/2); x++){
 		if (x != 0){
-			y = sin(x) * 10; //<--- The function
+			y = sin(x) * 5; //<--- The function
 			if((((f/2)- y) <= f) && (((f/2)- y) >= 0))
 				M[ ((f/2)- y) ][ ((c/2)+ x) ] = 999;
 		}
