@@ -1,8 +1,7 @@
-#include <conio.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <iostream.h>
+#include <iostream>
 #include <math.h>
+
+using namespace std;
 
 void initialize(int M[41][41], int f, int c){
 	for(int i = 0; i < f; i++){
@@ -55,13 +54,10 @@ void function(int y, int M[41][41], int f, int c){
 int main(){
 	int y = 0, M[41][41], f = 41, c = 41;
 
-	cout<<"WELCOME TO THE FUNCTION PLOTTER"<<endl<<endl;
 	initialize(M, f, c);
 	function(y, M, f, c);
 	fill(M, f, c);
 	show(M, f, c);
 
-	getch();
 	return 0;
 }
-
